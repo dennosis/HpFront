@@ -1,0 +1,15 @@
+
+
+.body {
+    grid-column: 2 ;
+    grid-row: 2;
+
+    margin-top: 50px;
+    margin-bottom: 20px;
+
+
+
+   overflow: auto;
+   position: relative;
+   /*display: flex;*/
+}

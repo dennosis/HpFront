@@ -1,0 +1,200 @@
+
+
+.table-app{
+    display: grid;
+    grid-template-columns: auto;
+    grid-auto-rows: min-content auto min-content;
+    grid-gap: 10px;
+    align-items: center;
+    justify-items: center;
+
+   
+}
+
+.table-app-header{
+    width:100%;
+    display: grid;
+    grid-template-columns: min-content auto min-content;
+    grid-auto-rows: min-content;
+    align-items: center;
+    justify-items: center;
+}
+
+.table-app-body{
+    overflow: auto;
+    min-width: 100%;
+    min-height: 0;
+    max-width: 100%;
+    max-height: -webkit-fill-available;
+
+}
+
+.table-app-footer{
+    width:100%;
+    display: grid;
+    grid-template-columns: min-content auto min-content;
+    grid-auto-rows: min-content;
+    align-items: center;
+    justify-items: center;
+}
+
+
+
+
+
+
+/**   Tabela   **/
+.table-app-table {
+    border-collapse: collapse;
+    width: 100%;
+
+    color:#fff;
+    
+    text-align: left;
+    text-transform: uppercase;
+}
+
+
+
+ 
+.table-app-table> tbody > tr > td, .table-app-table> thead > tr > th{
+    padding: 3px;
+    padding-left: 6px;
+    padding-right: 6px;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+
+
+
+.table-app-table > tbody > tr:hover {
+    background: rgba(50, 105, 115,.75)!important;
+}
+
+
+.table-app-table > tbody > tr:nth-child(odd) {
+    background: rgba(55,105,115,0.35);
+}
+
+
+
+
+/** ordenacao **/
+.sort-direction {
+    display: inline-block;
+    height: 0;
+    width: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    
+    margin-left: 5px;
+}
+
+.asc {
+    border-bottom: 5px solid #fff;
+}
+  
+.desc {
+    border-top: 5px solid #fff;
+}
+
+
+
+
+
+
+/** Paginacao **/
+.pagination {
+    /*
+    grid-column: 2;
+    grid-row: 3;
+*/
+    font-family: Helvetica;
+    white-space: nowrap;
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+}
+
+.pagination>li {
+    display: unset;
+    position: relative;
+    padding: 7px;
+    color: white;
+    background-color: rgba(55,105,115,0);
+    font-size: 0.75em;
+    border: solid 1px;
+    border-color: rgba(50, 105, 115,.35);
+    min-width: 20px;
+
+    cursor: pointer;
+}
+
+.pagination>li:hover {
+    background: rgba(50, 105, 115,.75)!important;
+}
+
+
+.pagination>.disabled {
+    display: none;
+}
+
+.pagination>.active{
+    cursor: default;
+    background-color: rgba(50, 105, 115,.35);
+}
+
+
+
+
+
+/** quantidade de itens na pagina **/
+select.table-app-input-form{
+    /*
+    grid-column: 1;
+    grid-row: 3;
+    */
+
+    padding: 7px;
+    border: 0px;
+    border: solid 1px;
+    border-color: rgba(50, 105, 115,.35);
+    outline: none;
+    border-radius: 0px;
+    background: rgba(55,105,115,0);
+    color: white;
+    font-size: 1em;
+    font-family: Helvetica;
+    font-size: 0.75em;
+}
+
+select.table-app-input-form:hover{
+    background: rgba(50, 105, 115,.75)!important;
+}
+
+select.table-app-input-form option{
+    background: rgba(50, 105, 115,.75);
+    outline:none;
+    border-radius: 5px; 
+}
+
+
+
+
+
+
+
+/** quantidade de itens mostrados **/
+.table-app-qtd-row{
+    /*
+    grid-column: 3;
+    grid-row: 3;
+    */
+
+    color: white;
+    padding: 7px;
+    font-size: 0.75em;
+
+    white-space: nowrap;
+}

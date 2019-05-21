@@ -1,0 +1,56 @@
+.info-alert {
+      display: grid;
+      grid-template-columns: min-content auto min-content ;
+
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 30px;
+      padding-right: 40px;
+
+      align-items:center
+  }
+  
+
+  .color-alert-bloq{
+    color: #fff;
+    background: #BC5569;
+  }
+
+  .color-alert-alert{
+    color: #fff;
+    background: rgb(204, 167, 67);
+  }
+
+  .color-alert-error{
+    color: #fff;
+    background: #BC5569;
+  }
+
+  .color-alert-info{
+    color: #fff;
+    background: #3D8DCB;
+  }
+
+  .color-alert-success{
+    color: #fff;
+    background: #85A06B;
+  }
+
+
+  .ico-alert{
+    grid-column: 1 ;
+  }
+
+
+  .text-alert{
+    grid-column: 2 ;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+
+  .close-alert{
+    grid-column: 3 ;
+    cursor: pointer;
+  }
+

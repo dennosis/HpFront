@@ -1,0 +1,45 @@
+
+
+.header {
+
+  grid-column: 1/4 ;
+	grid-row: 1;
+
+	display: grid;
+	grid-row-gap: 10px;
+	
+  grid-template-columns: 25px min-content auto min-content 25px;
+	grid-auto-rows: min-content;
+
+
+  color: #fff;
+	background: #222;
+	box-shadow: 0px 5px 10px rgba(0,0,0,.5);
+  padding-bottom: 10px;
+	padding-top: 10px;
+/*
+
+	position: fixed;
+	width: 100%;
+	left: 0;
+	top: 0;
+	z-index: 50;
+	*/
+
+}
+
+
+.header-InfoAlert{
+	grid-column: 1/6 ;
+	grid-row: 2;
+}
+
+.header-user-name{
+		grid-column: 4;
+    text-transform: uppercase;
+    font-size: 1em;
+    display: flex;
+    justify-content: center;
+		flex-direction: column;
+		white-space: nowrap;
+}
